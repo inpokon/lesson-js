@@ -323,3 +323,16 @@ a {
 .slick-next {
     right: -50px;
 }
+.btn-fixed {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    font-size: 30px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #69bff8;
+    background-color: #ffffff;
+}
