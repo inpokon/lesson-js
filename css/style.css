@@ -147,6 +147,8 @@ a {
     align-content: start;
     max-height: 200px;
 }
+.main__box {
+}
 .menu__link {
     display: block;
     width: 20%;
