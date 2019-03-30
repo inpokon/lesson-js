@@ -17,7 +17,6 @@ html, body {
 body {
     font-size: 16px;
     font-family: sans-serif;
-    background-image: linear-gradient(to top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 h1, h2, h3, h4 {
     margin: 0;
@@ -33,7 +32,8 @@ a {
 .wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: max-content;
+    background-image: linear-gradient(to top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 .content {
     flex: 1 0 auto;
@@ -337,4 +337,73 @@ a {
     height: 50px;
     border: 2px solid #69bff8;
     background-color: #ffffff;
+}
+.calculate {
+    background-color: #ffffff;
+    width: 500px;
+    border-radius: 5px;
+    padding: 10px 10px 15px;
+}
+.calculate__top {
+    width: 100%;
+}
+.calculate__top label {
+    pointer-events: none;
+}
+.calculate__top input {
+    width: calc(100% - 25px);
+    height: 40px;
+    font-size: 32px;
+    border: 2px solid #9a9ae1;
+    border-radius: 5px;
+    padding: 0 10px;
+    pointer-events: none;
+}
+.calculate__conf {
+    width: calc(100% - 25px);
+    padding: 10px 10px;
+    border: 1px solid #5ffbf1;
+    margin-top: 15px;
+}
+.calculate__link {
+    background-color: #8c8c8c;
+    border: 1px solid #297bde;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 0 5px 10px;
+    transition: background-color .3s;
+}
+.calculate__link:hover {
+    background-color: #ababab;
+}
+.calculate__block {
+    display: flex;
+    justify-content: space-between;
+}
+.calculate__wrap {
+    display: flex;
+    width: calc(100% - 25px);
+    padding: 10px 10px;
+    border: 1px solid #5ffbf1;
+    margin-top: 15px;
+}
+.calculate__left {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.calculate__left .calculate__link {
+    width: 27.1%;
+}
+.calculate__right {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
