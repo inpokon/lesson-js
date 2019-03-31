@@ -2,7 +2,7 @@
 <html lang="en" class="body-html">
 <head>
 		<meta charset="UTF-8">
-		<title>Задача 18</title>
+		<title>Задача 20</title>
 		<link rel="stylesheet" href="css/slick.css">
 		<link rel="stylesheet" href="css/slick-theme.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -12,9 +12,7 @@
 	<div class="popup__close">X</div>
 	<div class="popup__wrap">
 		<div class="slider">
-			<img src="images/page-18/01.png" alt="01">
-			<img src="images/page-18/02.png" alt="01">
-			<img src="images/page-18/03.png" alt="01">
+			<img src="images/page-19/01.png" alt="01">
 		</div>
 	</div>
 </div>
@@ -67,27 +65,17 @@
 							</div>
 							<div class="main__box">
 									<div id="header" class="main__desc">
-											18. «Калькулятор»
-											Нужно реализовать калькулятор. У него должны быть следующие возможности:
+											20. «Бегущая строка»
+											Реализовать бегущую строку. Она должна иметь следующие возможности
 									</div>
 									<div class="main__example">
-											Кнопки, вставляющие в текстовое поле число π и число e.
+											Менять текст строки на произвольный;
 											<br>
-											Кнопку backspace, удаляющую из текстового поля последнюю введенную цифру.
+											Изменить время «выбегания» строки;
 											<br>
-											Кнопку «+/–», меняющую знак числа на противоположный.
+											Менять направление движения строки на произвольное
 											<br>
-											Вычисление числа 1/x.
-											<br>
-											Вычисление синуса и косинуса числа.
-											<br>
-											Вычисление натурального логарифма числа.
-											<br>
-											Вычисление остатка от деления.
-											<br>
-											Возведение x в степень n.
-											<br>
-											Вычисление logab.
+											Пусть символы бегущей строки появляются не по одному, а по два.
 									</div>
 							</div>
 
@@ -95,64 +83,30 @@
 									<h2 class="main__title">
 											Ответ:
 									</h2>
-									<div class="calculate">
-											<div class="calculate__top">
-													<label>
-															<input disabled type="text" id="display" value="0">
-													</label>
-											</div>
-											<div class="calculate__conf">
-<!--													<div class="calculate__block">-->
-<!--															<span class="calculate__link calculate__pi">π</span>-->
-<!--															<span class="calculate__link calculate__e">e</span>-->
-<!--															<span class="calculate__link calculate__back">backspace</span>-->
-<!--															<span class="calculate__link calculate__plus-minus">+/-</span>-->
-<!--													</div>-->
-<!--													<div class="calculate__block">-->
-<!--															<span class="calculate__link calculate__sin">sin</span>-->
-<!--															<span class="calculate__link calculate__cos">cos</span>-->
-<!--															<span class="calculate__link calculate__log">log</span>-->
-<!--															<span class="calculate__link calculate__x-n">x<span>n</span></span>-->
-<!--															<span class="calculate__link calculate__logab">logab</span>-->
-<!--													</div>-->
-													<div class="calculate__block">
-															<span class="calculate__link clear-btn" id="c">c</span>
-															<span class="calculate__link clear-btn" id="ce">ce</span>
-													</div>
-											</div>
-											<div class="calculate__wrap">
-													<div class="calculate__left">
-															<span class="number calculate__link calculate__1">1</span>
-															<span class="number calculate__link calculate__2">2</span>
-															<span class="number calculate__link calculate__3">3</span>
-															<span class="number calculate__link calculate__4">4</span>
-															<span class="number calculate__link calculate__5">5</span>
-															<span class="number calculate__link calculate__6">6</span>
-															<span class="number calculate__link calculate__7">7</span>
-															<span class="number calculate__link calculate__8">8</span>
-															<span class="number calculate__link calculate__9">9</span>
-															<span class="number calculate__link calculate__0">0</span>
-															<span class="calculate__link" id="decimal">.</span>
-
-													</div>
-													<div class="calculate__right">
-															<span class="operation calculate__link calculate__plus">+</span>
-															<span class="operation calculate__link calculate__minus">-</span>
-															<span class="operation calculate__link calculate__raz">/</span>
-															<span class="operation calculate__link calculate__um">*</span>
-															<span class="operation calculate__link calculate__rav" id="result">=</span>
-													</div>
-											</div>
+									<div class="main__form">
+											<input type="text" id="js-text" placeholder="Введи текс для бегущей строки">
+											<input type="text" id="js-speed" placeholder="Введи скорость для бегущей строки только число">
+											<label>
+													<span>влево</span>
+													<input type="radio" name="leftRight" id="js-left" checked>
+											</label>
+											<label>
+													<span>вправо</span>
+													<input type="radio" name="leftRight" id="js-right">
+											</label>
+											<span class="btn" id="js-btn">Ok</span>
 									</div>
+
+									<div id="ticker">Привет, я бегущая строка,  можешь попробовать меня изменить и посмотреть на результат =)</div>
 							</div>
 
 					</main>
 			</div>
 			<footer class="footer">
 					<div class="pagination">
-							<a href="page-17.html" class="pagination__link"><span>&larr; Предыдущая задача</span></a>
+							<a href="page-19.html" class="pagination__link"><span>&larr; Предыдущая задача</span></a>
 							<a href="index.html" class="pagination__link"><span>Главная</span></a>
-							<a href="page-19.html" class="pagination__link"><span>Следующая задача &rarr;</span></a>
+							<a href="page-21.html" class="pagination__link"><span>Следующая задача &rarr;</span></a>
 					</div>
 					<div class="copy">
 							<p class="copy__par">© 2019 Frontend разработчик Антон Прокопьев</p>
@@ -184,6 +138,6 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/lesson/lesson-18.js"></script>
+	<script src="js/lesson/lesson-20.js"></script>
 </body>
 </html>
