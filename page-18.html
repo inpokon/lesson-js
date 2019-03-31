@@ -96,43 +96,49 @@
 									<div class="calculate">
 											<div class="calculate__top">
 													<label>
-															<input type="text">
+															<input disabled type="text" id="display" value="0">
 													</label>
 											</div>
 											<div class="calculate__conf">
 													<div class="calculate__block">
-															<a class="calculate__link calculate__pi" href="#">π</a>
-															<a class="calculate__link calculate__e" href="#">e</a>
-															<a class="calculate__link calculate__back" href="#">backspace</a>
-															<a class="calculate__link calculate__plus-minus" href="#">+/-</a>
+															<span class="calculate__link calculate__pi">π</span>
+															<span class="calculate__link calculate__e">e</span>
+															<span class="calculate__link calculate__back">backspace</span>
+															<span class="calculate__link calculate__plus-minus">+/-</span>
 													</div>
 													<div class="calculate__block">
-															<a class="calculate__link calculate__sin" href="#">sin</a>
-															<a class="calculate__link calculate__cos" href="#">cos</a>
-															<a class="calculate__link calculate__log" href="#">log</a>
-															<a class="calculate__link calculate__x-n" href="#">x<span>n</span></a>
-															<a class="calculate__link calculate__logab" href="#">logab</a>
+															<span class="calculate__link calculate__sin">sin</span>
+															<span class="calculate__link calculate__cos">cos</span>
+															<span class="calculate__link calculate__log">log</span>
+															<span class="calculate__link calculate__x-n">x<span>n</span></span>
+															<span class="calculate__link calculate__logab">logab</span>
+													</div>
+													<div class="calculate__block">
+															<span class="calculate__link clear-btn" id="c">c</span>
+															<span class="calculate__link clear-btn" id="ce">ce</span>
 													</div>
 											</div>
 											<div class="calculate__wrap">
 													<div class="calculate__left">
-															<a class="calculate__link calculate__1" href="#">1</a>
-															<a class="calculate__link calculate__2" href="#">2</a>
-															<a class="calculate__link calculate__3" href="#">3</a>
-															<a class="calculate__link calculate__4" href="#">4</a>
-															<a class="calculate__link calculate__5" href="#">5</a>
-															<a class="calculate__link calculate__6" href="#">6</a>
-															<a class="calculate__link calculate__7" href="#">7</a>
-															<a class="calculate__link calculate__8" href="#">8</a>
-															<a class="calculate__link calculate__9" href="#">9</a>
-															<a class="calculate__link calculate__0" href="#">0</a>
+															<span class="number calculate__link calculate__1">1</span>
+															<span class="number calculate__link calculate__2">2</span>
+															<span class="number calculate__link calculate__3">3</span>
+															<span class="number calculate__link calculate__4">4</span>
+															<span class="number calculate__link calculate__5">5</span>
+															<span class="number calculate__link calculate__6">6</span>
+															<span class="number calculate__link calculate__7">7</span>
+															<span class="number calculate__link calculate__8">8</span>
+															<span class="number calculate__link calculate__9">9</span>
+															<span class="number calculate__link calculate__0">0</span>
+															<span class="calculate__link" id="decimal">.</span>
+
 													</div>
 													<div class="calculate__right">
-															<a class="calculate__link calculate__plus" href="#">+</a>
-															<a class="calculate__link calculate__minus" href="#">-</a>
-															<a class="calculate__link calculate__raz" href="#">/</a>
-															<a class="calculate__link calculate__um" href="#">*</a>
-															<a class="calculate__link calculate__rav" href="#">=</a>
+															<span class="operation calculate__link calculate__plus">+</span>
+															<span class="operation calculate__link calculate__minus">-</span>
+															<span class="operation calculate__link calculate__raz">/</span>
+															<span class="operation calculate__link calculate__um">*</span>
+															<span class="operation calculate__link calculate__rav" id="result">=</span>
 													</div>
 											</div>
 									</div>

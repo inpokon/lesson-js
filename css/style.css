@@ -377,6 +377,7 @@ a {
     width: 25%;
     margin: 0 5px 10px;
     transition: background-color .3s;
+    cursor: pointer;
 }
 .calculate__link:hover {
     background-color: #ababab;
